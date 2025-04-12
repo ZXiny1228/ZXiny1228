@@ -1,5 +1,5 @@
 ---
-title: "Java常见算法"
+title: "Java_basis"
 date: 2025-01-01
 toc: true 
 render_with_liquid: false
