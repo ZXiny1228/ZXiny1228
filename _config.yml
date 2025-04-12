@@ -32,6 +32,10 @@ collections:
 # 默认布局
 defaults:
   - scope:
+      path: "" # 所有文件
+    values:
+      render_with_liquid: false
+  - scope:
       path: "_java_basic"  
       type: "java_basic"
     values:
