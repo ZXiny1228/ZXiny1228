@@ -1,5 +1,5 @@
 ---
-title: "Java基础语法"
+title: "Java基础算法"
 slug: "java-basis" 
 date: 2025-01-01
 ---
