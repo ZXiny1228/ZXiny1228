@@ -2,3 +2,14 @@ title: 小周工作日记
 description: 再努力一些！
 baseurl: ""  
 theme: null  
+
+collections:
+  categories:
+    output: true
+    permalink: /:path/
+defaults:
+  - scope:
+      path: ""
+      type: categories
+    values:
+      layout: category
