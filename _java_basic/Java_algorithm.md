@@ -1,5 +1,5 @@
 ---
-title: "Java基础语法"
+title: "Java_algorithm"
 date: 2025-01-01
 toc: true 
 ---
