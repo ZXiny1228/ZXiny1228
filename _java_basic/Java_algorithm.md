@@ -1,8 +1,9 @@
 ---
-title: "Java_algorithm"
+title: "Java基础语法"
+slug: "java-basis" 
 date: 2025-01-01
-toc: true 
 ---
+
 
 # Java基础语法
 
