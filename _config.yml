@@ -41,37 +41,37 @@ defaults:
       path: "_java_basic"  
       type: "java_basic"
     values:
-      category: "java"
+      slug: "java-basis"
       layout: "post"
   - scope:
       path: "_java_juc"    
       type: "java_juc"
     values:
-      category: "juc"
+      slug: "java-juc"
       layout: "post"
   - scope:
       path: "_java_jvm"   
       type: "java_jvm"
     values:
-      category: "jvm"
+      slug: "java-jvm"
       layout: "post"
   - scope:
       path: "_java_ssm"   
       type: "java_ssm"
     values:
-      category: "ssm"
+      slug: "java-ssm"
       layout: "post"
   - scope:
       path: "_database_mysql"   
       type: "database_mysql"
     values:
-      category: "mysql"
+      slug: "database_mysql"
       layout: "post"
   - scope:
       path: "_database_redis"   
       type: "database_redis"
     values:
-      category: "redis"
+      slug: "database_redis"
       layout: "post"
   - scope:
       path: "_project"   
