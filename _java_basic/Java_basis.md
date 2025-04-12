@@ -1,8 +1,7 @@
 ---
-title: "Java_basis"
+title: "Java基础语法"
+slug: "java-basis" 
 date: 2025-01-01
-toc: true 
-render_with_liquid: false
 ---
 
 # Java常见算法
