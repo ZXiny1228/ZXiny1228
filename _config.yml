@@ -9,96 +9,91 @@ timezone: Asia/Shanghai
 collections:
   java_basic:
     output: true
-    permalink: /java_basic/:title/
+    permalink: /java/:slug/  # 修改为更简洁的URL结构
   java_jvm:
     output: true
-    permalink: /java_jvm/:title/
+    permalink: /jvm/:slug/
   java_juc:
     output: true
-    permalink: /java_juc/:title/
+    permalink: /juc/:slug/
   java_ssm:
     output: true
-    permalink: /java_ssm/:title/
+    permalink: /ssm/:slug/
   database_mysql:
     output: true
-    permalink: /database_mysql/:title/
+    permalink: /mysql/:slug/
   database_redis:
     output: true
-    permalink: /database_redis/:title/
+    permalink: /redis/:slug/
   project:
     output: true
-    permalink: /project/:title/    
+    permalink: /project/:slug/
 
 # 默认布局
 defaults:
   - scope:
-      path: "" # 所有文件
+      path: "" # 全局默认设置
     values:
+      layout: "post"
       render_with_liquid: false
+      show_toc: true
   - scope:
       path: "_java_basic"  
       type: "java_basic"
     values:
-      layout: "post"
-      category: "java_basic"
+      category: "java"
   - scope:
       path: "_java_juc"    
       type: "java_juc"
     values:
-      layout: "post"
-      category: "java_juc"
+      category: "juc"
   - scope:
       path: "_java_jvm"   
       type: "java_jvm"
     values:
-      layout: "post"
-      category: "java_jvm"
+      category: "jvm"
   - scope:
       path: "_java_ssm"   
       type: "java_ssm"
     values:
-      layout: "post"
-      category: "java_ssm"
+      category: "ssm"
   - scope:
       path: "_database_mysql"   
       type: "database_mysql"
     values:
-      layout: "post"
-      category: "database_mysql"
+      category: "mysql"
   - scope:
       path: "_database_redis"   
       type: "database_redis"
     values:
-      layout: "post"
-      category: "database_redis"
+      category: "redis"
   - scope:
       path: "_project"   
       type: "project"
     values:
-      layout: "post"
       category: "project"
 
 # 插件
 plugins:
   - jekyll-toc
   - jekyll-paginate
+  - jekyll-seo-tag  # 新增SEO插件
 
 # 导航菜单 (与集合对应)
 navigation:
   - title: 首页
     url: /
   - title: JAVA
-    url: /java_basic/
+    url: /java/
   - title: JVM
-    url: /java_jvm/ 
+    url: /jvm/ 
   - title: JUC
-    url: /java_juc/ 
+    url: /juc/ 
   - title: SSM
-    url: /java_ssm/   
-  - title: MYSQL
-    url: /database_mysql/
-  - title: REDIS
-    url: /database_redis/
+    url: /ssm/   
+  - title: MySQL
+    url: /mysql/
+  - title: Redis
+    url: /redis/
   - title: PROJECT
     url: /project/
-
