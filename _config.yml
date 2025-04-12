@@ -49,7 +49,7 @@ defaults:
     values:
       layout: "post"
       category: "java_jvm"
- - scope:
+  - scope:
       path: "_java_ssm"   
       type: "java_ssm"
     values:
@@ -63,12 +63,12 @@ defaults:
       category: "database_mysql"
   - scope:
       path: "_database_redis"   
-      type: "database_reids"
+      type: "database_redis"
     values:
       layout: "post"
       category: "database_redis"
   - scope:
-      path: "-project"   
+      path: "_project"   
       type: "project"
     values:
       layout: "post"
@@ -96,4 +96,4 @@ navigation:
   - title: REDIS
     url: /database_redis/
   - title: PROJECT
-    url: /project
+    url: /project/
