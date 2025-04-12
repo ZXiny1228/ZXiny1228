@@ -5,11 +5,11 @@ baseurl: ""
 theme: null 
 timezone: Asia/Shanghai
 
-# 集合配置（按分类管理文章）
+# 集合配置
 collections:
   java_basic:
     output: true
-    permalink: /java/:slug/  # 修改为更简洁的URL结构
+    permalink: /java/:slug/
   java_jvm:
     output: true
     permalink: /jvm/:slug/
@@ -32,7 +32,7 @@ collections:
 # 默认布局
 defaults:
   - scope:
-      path: "" # 全局默认设置
+      path: "" # 全局默认
     values:
       layout: "post"
       render_with_liquid: false
@@ -42,58 +42,51 @@ defaults:
       type: "java_basic"
     values:
       slug: "java-basis"
-      layout: "post"
-      category: "java" 
+      category: "java"
   - scope:
       path: "_java_juc"    
       type: "java_juc"
     values:
       slug: "java-juc"
-      layout: "post"
-      category: "juc" 
+      category: "juc"
   - scope:
       path: "_java_jvm"   
       type: "java_jvm"
     values:
       slug: "java-jvm"
-      layout: "post"
-      category: "jvm" 
+      category: "jvm"
   - scope:
       path: "_java_ssm"   
       type: "java_ssm"
     values:
       slug: "java-ssm"
-      layout: "post"
-      category: "ssm" 
+      category: "ssm"
   - scope:
       path: "_database_mysql"   
       type: "database_mysql"
     values:
-      slug: "database_mysql"
-      layout: "post"
-      category: "mysql" 
+      slug: "database-mysql"
+      category: "mysql"
   - scope:
       path: "_database_redis"   
       type: "database_redis"
     values:
-      slug: "database_redis"
-      layout: "post"
-      category: "redis" 
+      slug: "database-redis"
+      category: "redis"
   - scope:
       path: "_project"   
       type: "project"
     values:
+      slug: "project"
       category: "project"
-      layout: "post"
-      category: "project" 
 
 # 插件
 plugins:
   - jekyll-toc
   - jekyll-paginate
-  - jekyll-seo-tag  # 新增SEO插件
+  - jekyll-seo-tag
 
-# 导航菜单 (与集合对应)
+# 导航菜单
 navigation:
   - title: 首页
     url: /
