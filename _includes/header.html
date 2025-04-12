@@ -1,13 +1,13 @@
 <header class="site-header">
   <div class="wrapper">
     <a class="site-title" href="/">{{ site.title }}</a>
-    <nav class="site-nav">
-      {% for link in site.navigation %}
-        <a href="{{ link.url }}" 
-           {% if page.url == link.url %}class="active"{% endif %}>
-          {{ link.title }}
-        </a>
-      {% endfor %}
-    </nav>
+    <nav>
+  {% for item in site.navigation %}
+    <a href="{{ item.url }}" 
+       {% if page.url == item.url %}class="active"{% endif %}>
+      {{ item.title }}
+    </a>
+  {% endfor %}
+</nav>
   </div>
 </header>
