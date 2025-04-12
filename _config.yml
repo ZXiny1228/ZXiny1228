@@ -15,3 +15,15 @@ defaults:
       layout: category
 plugins:
   - jekyll-toc
+  
+navigation:
+  - title: 首页
+    url: /
+  - title: 关于
+    url: /about
+  - title: Java基础
+    url: /java
+  - title: Java并发
+    url: /java_juc  
+  - title: Database
+    url: /database
