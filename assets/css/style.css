@@ -17,3 +17,24 @@ nav a {
 .post {
     margin-bottom: 40px;
 }
+/* 目录样式 */
+.toc {
+  float: left;
+  width: 250px;
+  padding: 10px;
+  position: sticky;
+  top: 20px;
+}
+
+.content {
+  margin-left: 280px;
+}
+
+/* 分类导航样式 */
+nav a {
+  display: inline-block;
+  padding: 5px 15px;
+  background: #f0f0f0;
+  margin: 0 5px;
+  border-radius: 4px;
+}
